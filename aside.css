@@ -1,0 +1,239 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+ }
+ body,html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-height: 100vh;   }
+        /* Sidebar styling */
+        #sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #343a40;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            max-height: 100vh;
+             
+        }
+
+        /* Sidebar Header (Logo & Toggle Button) */
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+   
+        #logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+        #toggle-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Sidebar Links */
+        #sidebar .sidebar-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        #sidebar .sidebar-link:hover {
+            background: #495057;
+        }
+
+        #sidebar .sidebar-link i {
+            margin-right: 10px;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        
+        .submenu {
+            display: none;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .task-menu:hover .submenu {
+            display: block;
+        }
+        .sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.sidebar-name {
+    font-size: 18px;
+    margin: 0;
+}
+ 
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+#toggle-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sidebar Links */
+#sidebar .sidebar-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#sidebar .sidebar-link:hover {
+    background: #495057;
+}
+
+#sidebar .sidebar-link i {
+    margin-right: 10px;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.sidebar-name {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Main Content */
+.container {
+    margin-left: 260px; /* Ensure content appears next to sidebar */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #306e9d;
+}
+ 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between cards */
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.card-list {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#sidebar {
+    transition: all 0.3s ease;
+    width: 250px; /* Default */
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.container {
+    transition: all 0.3s ease;
+    margin-left: 250px; /* Default when sidebar is open */
+     width: calc(100% - 250px); 
+}
+
+ 

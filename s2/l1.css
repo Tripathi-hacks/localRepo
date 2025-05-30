@@ -1,0 +1,85 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background: #2c2f33;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar ul li:hover {
+    margin-left:10px;
+    border: 2px solid dark;
+    
+    border-radius: 6px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+.settings {
+    margin-top: auto;
+    padding-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main-content {
+    flex-grow: 1;
+    background: #f4f4f4;
+    padding: 20px;
+}
+header h2 {
+    margin-bottom: 20px;
+}
+.settings-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.theme-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.theme {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color1 { background: #ff5722; }
+.color2 { background: #673ab7; }
+.color3 { background: #3f51b5; }
+.color4 { background: #e91e63; }
+.save-btn {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

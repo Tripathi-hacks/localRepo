@@ -1,0 +1,449 @@
+ /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles  new changee made in the new reposatory in the section of the miner container */
+.site-header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-bar-wraper {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+.main-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo-header a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.logo-header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navbar Styles */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #3498db;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    min-width: 150px;
+}
+
+.sub-menu li a {
+    color: #fff;
+    padding: 8px 15px;
+}
+
+.navbar-nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li a:hover {
+    color: #3498db;
+}
+
+/* Navbar Toggle Button  this will togal on the case of the condition satisfied */
+.navbar-toggler {
+    display: none;
+}
+
+.navicon span {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navicon span {
+    transform: rotate(45deg);
+}
+
+/* Extra Nav */
+.extra-nav {
+    display: flex;
+    align-items: center;
+}
+
+.extra-cell {
+    display: flex;
+    gap: 10px;
+}
+
+.extra-cell .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.extra-cell .btn-outline-primary {
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.extra-cell .btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        display: none;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse.collapse {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-header {
+        margin-bottom: 20px;
+    }
+
+    .extra-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f5f8;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #000;
+    padding: 15px 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-header .main-bar-wraper {
+    background: #000;
+    padding: 10px 0;
+}
+
+.main-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Header Navbar */
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav li {
+    margin: 0 20px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: #1e90ff;
+}
+
+.extra-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.extra-nav a:hover {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.navicon span {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    margin: 6px 0;
+    width: 25px;
+}
+
+/* Main Banner */
+.main-bnr {
+    background: url('images/home-banner/banner-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.main-bnr h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-bnr .text-line {
+    color: #1e90ff;
+}
+
+.main-bnr p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main-bnr .btn {
+    margin-right: 15px;
+}
+
+.main-bnr .btn-primary {
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    color: #fff;
+}
+
+.main-bnr .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.main-bnr .video-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-bnr .video-btn i {
+    margin-right: 8px;
+}
+
+.banner-media img {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Crypto Boxes */
+.crypto-wrapper {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.crypto-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.crypto-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-media img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.crypto-info h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.crypto-info .price {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.crypto-info .price .text-green {
+    color: #28a745;
+}
+
+.crypto-info .price .text-red {
+    color: #dc3545;
+}
+
+.crypto-info .btn {
+    padding: 12px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.crypto-info .btn:hover {
+    background-color: #0056b3;
+}
+
+.crypto-info .btn-square {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.crypto-info .btn-square svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 992px) {
+    .main-bnr h1 {
+        font-size: 30px;
+    }
+
+    .main-bnr p {
+        font-size: 16px;
+    }
+
+    .crypto-box {
+        margin-bottom: 30px;
+    }
+
+    .crypto-wrapper .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-bnr h1 {
+        font-size: 24px;
+    }
+
+    .main-bnr p {
+        font-size: 14px;
+    }
+
+    .crypto-box {
+        width: 100%;
+    }
+}
+

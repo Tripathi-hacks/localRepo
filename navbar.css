@@ -1,0 +1,283 @@
+ /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: rgb(222, 235, 240);
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between elements */
+}
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    background-color: rgb(129, 135, 142);
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+/* Navigation container */
+nav {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0 auto;
+}
+
+/* Logo styling - Align logo to the left */
+.nav-logo {
+    margin-left: 20px; /* Add margin to space the logo from the left */
+}
+
+/* Menu links container - Align menu links to the right */
+.nav-links {
+    margin-left: auto; /* Push the nav links to the right */
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 12px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid #dbdada;
+    color: #fff;
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+/* Navigation buttons */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon styling */
+.nav-btn i {
+    font-size: 25px;
+    margin: 0 6px;
+    display: none;
+}
+
+/* Wow.js animation classes (fadeInUp) */
+.wow {
+    visibility: hidden;
+}
+
+/* Dark Section */
+.dark-section {
+    width: 100%;
+    height: 700px;
+    background-color: #111;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Container to wrap and center the row */
+.container {
+    display: flex;
+    justify-content: space-between; /* Spread the columns across the section */
+    width: 100%;
+    max-width: 1200px; /* Optional: Set max-width if you want to control the content width */
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%;
+}
+
+/* Right Column (Text) */
+.col-xl-7 {
+    text-align: left; /* Keep the text aligned to the left */
+}
+
+/* Left Column (Image) */
+.col-xl-5 {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.banner-media img {
+    width: 100%;
+    max-width: 600px; /* Adjust this size as needed */
+    animation: bounceInLeft 2s ease-out;
+}
+
+/* Text section styling */
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Button styles */
+.contant-box a {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative; /* Added relative positioning to parent */
+    z-index: 1;
+}
+
+.contant-box a::before {
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, #0fd850 0%, #9f0470 100%);
+    cursor: pointer;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    border-radius: 30px;
+    height: 100%; /* Ensure height fills the link */
+}
+
+.contant-box a:hover::before {
+    width: 100%; /* Full width on hover */
+}
+
+.login-btn::before {
+    content: " ";
+    width: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 30em;
+    height: 3em;
+    background-image: linear-gradient(to right, #0fd850 0%, #9f0470 100%);
+    cursor: pointer;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.login-btn:hover::before {
+    width: 9em;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .dark-section {
+        padding: 60px 20px;
+    }
+
+    /* Stack columns vertically on small screens */
+    .row {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .col-xl-7, .col-xl-5 {
+        width: 100%; /* Ensure both columns take full width */
+        text-align: center; /* Center text on smaller screens */
+        margin-bottom: 20px; /* Add space between text and image */
+    }
+
+    .banner-media img {
+        max-width: 90%; /* Resize image to fit smaller screens */
+    }
+
+    .col-xl-7 {
+        order: 1; /* Ensure text comes first */
+    }
+
+    .col-xl-5 {
+        order: 2; /* Ensure image comes second */
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #menu {
+        display: none;
+        background-color: slategrey;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        text-align: center;
+        height: auto;
+    }
+
+    #menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    button {
+        display: none;
+    }
+
+    .nav-btn i {
+        display: block;
+    }
+
+    #close-icon {
+        display: none;
+        font-size: 20px;
+    }
+}
+
+
